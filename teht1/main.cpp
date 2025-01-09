@@ -27,8 +27,8 @@ int main(){
 int game(int maxnum){
 
     //Siemen
-    srand(time(0));
-
+    time_t seed = time(nullptr);
+    srand(seed);
     //Arvotaan numero
     int arvottunro = rand() % maxnum + 1;
 
